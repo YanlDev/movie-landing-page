@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+:root{
+  --primary-color: #00925D;
+  --primary-text-color:#FFFFFF;
+  --primary-background-color: #0D0C0F;
+  --primary-font-family:'Rubik', sans-serif;;
+  --shade-color:#28262D;
+  --cards-background-color:#08080A;
+  --border-buttons-color:#9CA4AB;
+  --font-size-paragraph: 1rem;
+  --h1-size: 2rem; 
+  --h2-size: 1.5rem;
+  --font-weight-titles:700;
+  --font-weight-paragraph:400;
+}
+
+body{
+  background-color: var(--primary-background-color);
+  margin: 0;
+}
+
+.hero{
+  background-image: url('/img/Mandalorian.png'); 
+  height: 100vh;
+}
