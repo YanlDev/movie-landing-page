@@ -5,7 +5,7 @@
   --primary-text-color:#FFFFFF;
   --primary-background-color: #0D0C0F;
   --primary-font-family:'Rubik', sans-serif;;
-  --shade-color:#28262D;
+  --shade-color:#28262d;
   --cards-background-color:#08080A;
   --border-buttons-color:#9CA4AB;
   --font-size-paragraph: 1rem;
@@ -13,6 +13,7 @@
   --h2-size: 1.5rem;
   --font-weight-titles:700;
   --font-weight-paragraph:400;
+  --border-radius: 10px;
 }
 
 body{
