@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+:root{
+  --primary-color: #00925D;
+  --primary-text-color:#FFFFFF;
+  --primary-background-color: #0D0C0F;
+  --primary-font-family:'Rubik', sans-serif;;
+  --shade-color:#28262D;
+  --cards-background-color:#08080A;
+  --border-buttons-color:#9CA4AB;
+  --font-size-paragraph: 1rem;
+  --h1-size: 2rem; 
+  --h2-size: 1.5rem;
+  --font-weight-titles:700;
+  --font-weight-paragraph:400;
+  --border-radius: 10px;
+}
+
+body{
+    background-color: var(--primary-background-color);
+    margin: 0;
+    font-family: var(--primary-font-family);
+}
+.img-logo{
+    position: relative;
+    margin-right: 10px;
+}
+.img-logo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+.container{
+    position: relative;
+    color: var(--primary-text-color);
+    font-family: var(--primary-font-family);
+    font-weight: var(--font-weight-titles);
+    display: flex;
+    align-items: center;
+}
+.container .list--menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    gap: 32px;
+}
+.container .list--menu li{
+    display: inline-block;
+    margin: 0 10px;
+}
+.container .list--menu li a{
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+.list--menu li a:hover{
+    color: var(--primary-color);
+}
+.list--menu{
+    display: flex;
+    justify-content: center;
+}
+.login{
+    margin-left: auto;
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+.login button{
+    color: var(--primary-text-color);
+    border-radius: var(--border-radius);
+    border: none;
+    text-decoration: none;
+    margin-right: 3px;
+    margin-left: 3px;
+    background-color: var(--primary-color);
+}
+.login-button, .register-button {
+    border-radius: var(--border-radius);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+  
+.login-button:hover, .register-button:hover {
+    background-color: var(--primary-color);
+}
+  
+/*Hero*/  
+.hero{
+    background-image: linear-gradient(358.93deg, #0D0C0F 0.83%, rgba(13, 12, 15, 0.85) 28.55%, rgba(13, 12, 15, 0.26) 57.53%, rgba(13, 12, 15, 0.284314) 70.66%, #0D0C0F 103.18%),
+    url('/img/Mandalorian.png');
+    height: 100vh;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.container-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 26px;
+    gap: 8px;
+    max-width: 506px;
+    height: 158px;
+}
+  
+.container-content .contentBox {
+    width: fill;
+    height: hug;
+    margin-top: 300px;
+    top: 52px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+  
+.container-content .contentBox h2 {
+    font-family: var(--primary-font-family);
+    font-size: var(--h2-size);
+    font-weight: var(--font-weight-titles);
+    letter-spacing: 0.005em;
+    color: var(--primary-text-color);
+}
+  
+.container-content .contentBox span {
+    color: var(--border-buttons-color);
+}
+  
+.container-content .contentBox p {
+    font-size: var(--font-size-paragraph);
+    color: var(--primary-text-color);
+}
+.button-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 23px;
+    width: 150px;
+    height: 32px;  
+}
+.button-container button {
+    white-space: nowrap;
+    width: 146px;
+    height: 46px;
+    border-radius: var(--border-radius);
+    letter-spacing: 0.005em;
+}
+    
+.play-button {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--primary-text-color);
+}
+    
+.trailer-button {
+    background-color: #28262D;
+    border: none;
+    color: var(--primary-text-color);
+}
+    
+.watchlist-button {
+    background-color: transparent;
+    color: var(--primary-text-color);
+}
+.carousel {
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+.movie-info {
+    position: relative;
+}
+.slider {
+    display: flex;
+    margin-right: 10px;
+}
+      
+.slide {
+    flex: 0 0 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    background-color: var(--border-buttons-color);
+    transition: background-color 0.3s ease;
+}
+.slide:hover {
+    background-color: var(--primary-text-color);
+    }
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+      
+.pagination label {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--primary-text-color);
+    cursor: pointer;
+    margin: 0 5px;
+}
+      
+.pagination input[type="radio"] {
+    position: absolute;
+    visibility: hidden;
+}

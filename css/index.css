@@ -13,6 +13,7 @@
   --h2-size: 1.5rem;
   --font-weight-titles:700;
   --font-weight-paragraph:400;
+  --border-radius: 10px;
 }
 
 body{
