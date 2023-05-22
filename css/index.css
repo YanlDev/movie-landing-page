@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 @import url('./components/header.css');
 @import url('./components/hero.css');
+@import url('./components/estrenos.css');
 
 :root{
   --primary-color: #00925D;
@@ -16,6 +17,10 @@
   --font-weight-titles:700;
   --font-weight-paragraph:400;
   --border-radius: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body{
@@ -34,6 +39,10 @@ h1{
   font-weight: var(--font-weight-paragraph);
   font-size: var(--font-size-paragraph);
   line-height: 1.7;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .text-gray{
@@ -87,3 +96,7 @@ h1{
   padding: 10px 20px;
 }
 
+.section{
+  padding-top: 5rem;
+  height: 100vh;
+}

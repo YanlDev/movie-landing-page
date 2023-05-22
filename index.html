@@ -19,13 +19,12 @@
   
         <ul class="list--menu d-flex gap-xs">
           <li><a class="link nav-l" href="#">Inicio</a></li>
-          <li><a class="link nav-l" href="#">Descubrir</a></li>
-          <li><a class="link nav-l" href="#">Estrenos</a></li>
+          <li><a class="link nav-l" href="#estrenos">Estrenos</a></li>
           <li><a class="link nav-l" href="#">Foro</a></li>
-          <li><a class="link nav-l" href="#">About</a></li>
+          <li><a class="link nav-l" href="#">Conócenos</a></li>
         </ul>
   
-        <div class="login d-flex gap-xs login-flex">
+        <div class="d-flex login  gap-xs login-flex">
           <a class="link button" href="#">Entrar</a>
           <a class="link button" href="#">Regístrate</a>
         </div>
@@ -38,49 +37,59 @@
       <div class="container m-auto d-flex al-center">
         <div class="movie-info">
           <h1>The Mandalorian</h1>
-          <p class="text text-gray">2h40m • 2022 • Fantasy • Actions</p>
-          <p class="text">The third season of the American television series The Mandalorian stars Pedro Pascal as the title character, a bounty hunter traveling to Mandalore to redeem his past transgressions with his adopted son Grogu and being aided on their journey by fellow Mandalorian Bo-Katan Kryze.</p>
+          <p class="text text-gray">2h40m • 2022 • Fantasía • Acción/p>
+          <p class="text">La tercera temporada de la serie de televisión estadounidense The Mandalorian está protagonizada por Pedro Pascal como el personaje del título, un cazarrecompensas que viaja a Mandalore para redimir sus transgresiones pasadas con su hijo adoptivo Grogu y que recibe la ayuda en su viaje de su compañero mandaloriano Bo-Katan Kryze.</p>
           <div class="movie-buttons d-flex gap-xs">
-            <a class="link button" href="">Play Now</a>
-            <a class="link button" href="">Watch Trailer</a>
+            <a class="link button" href="">Ver Ahora</a>
+            <a class="link button" href="">Ver Trailer</a>
           </div>
         </div>
       </div>
     </article>
   </main>
 
-  <section class="section">
-    <div class="container">
-      <h2 class="subtitle">Últimos Estrenos</h2>
+  <section class="section" id="estrenos">
+    <div class="container m-auto" >
+      <h2 class="title text-center" >Últimos Estrenos </h2>
       <div class="card-container">
         <figure class="card">
           <img src="img/ImageEstreno-1.png" alt="Estreno-1">
-          <figcaption>
+          <figcaption class="text">
             The Super Mario Bros Movie
           </figcaption>
         </figure>
         <figure class="card">
-          <img src="img/ImageEstreno-2.png" alt="Estreno-1">
-          <figcaption>
+          <img src="img/ImageEstreno-2.png" alt="Estreno-2">
+          <figcaption class="text">
             Barbie
           </figcaption>
         </figure>
         <figure class="card">
-          <img src="img/ImageEstreno-3.png" alt="Estreno-1">
-          <figcaption>
+          <img src="img/ImageEstreno-3.png" alt="Estreno-3">
+          <figcaption class="text">
             Dungeon & Dragons; Honor Among Thief
           </figcaption>
         </figure>
         <figure class="card">
-          <img src="img/ImageEstreno-4.png" alt="Estreno-1">
-          <figcaption>
+          <img src="img/ImageEstreno-4.png" alt="Estreno-4">
+          <figcaption class="text">
             Satan’s slaves  
           </figcaption>
         </figure>
       </div>
     </div>
   </section>
+  <script>
+    const header = document.querySelector('.header')
 
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+  </script>
 </body>
 
 </html>
