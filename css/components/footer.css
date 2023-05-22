@@ -1,0 +1,57 @@
+.footer {
+    display: block;
+}
+h3 {
+    width: 32%;
+    font-size: var(--h3-size);
+}
+.enlaces{
+    line-height: 80px;
+}
+.icon {
+    font-size: var(--icon-size);
+}
+.bi {
+    color: var(--primary-text-color);
+}
+.link:hover {
+    background-color:var(--primary-color);
+    color: var(--primary-text-color) ;
+    padding: 0.2rem 0.6rem;
+    border-radius: 5px;
+
+}
+
+
+@media (min-width: 750px) and (max-width: 950px) {
+    .footer h3{
+        width: 40%;
+        font-size: 1.6rem;
+    }
+}
+  
+@media (max-width: 750px){
+    .nav {
+        padding: 0 ;
+        background-color: var(--primary-background-color);
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    .footer h3{
+        display: none;
+    }
+    .enlaces {
+        width: 100%;
+        padding: 1rem 0;
+        line-height: 0;
+    }
+    .menu {
+        justify-content: center;
+    }
+    .icon {
+        justify-content: center;
+    }
+}
