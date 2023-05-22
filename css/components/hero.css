@@ -15,12 +15,21 @@
 }
 .movie-info{
   position: relative;
-  width: 50%;
+  width: 60%;
   z-index: 1;
+  padding: 5px 1rem;
 }
 .movie-buttons a:first-child{
   background-color: var(--primary-color);
 }
 .movie-buttons a:nth-child(2){
   background-color: var(--shade-color);
+}
+
+.movie-buttons a:first-child:hover{
+  background-color: #025c3b;
+}
+
+.movie-buttons a:nth-child(2):hover{
+  background-color: var(--primary-background-color);
 }
