@@ -19,9 +19,54 @@
 body{
   background-color: var(--primary-background-color);
   margin: 0;
+  color: var(--primary-text-color);
+  font-family: var(--primary-font-family);
 }
 
+.subtitle{
+  font-size: var(--h2-size);
+  font-weight: var(--font-weight-titles);
+}
+
+
 .hero{
-  background-image: url('/img/Mandalorian.png'); 
+  /* background-image: url('/img/Mandalorian.png');  */
   height: 100vh;
+}
+
+.section{
+  padding-top: 3rem;
+}
+
+.container{
+  width: 100%;
+  /* text-align: center; */
+}
+
+.card-container{
+  display: grid;
+  grid-template-columns: 250px;
+}
+
+.card{
+  width: 100%;
+}
+.card img{
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .section{
+    /* margin: 0 auto; */
+  }
+  .container{
+    margin: 0 auto;
+    max-width: 1048px;
+  }
+  .card-container{
+    grid-template-columns: repeat(4, 250px);
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 250px)); */
+    justify-items: center;
+    column-gap: 1rem;
+  }
 }
