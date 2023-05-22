@@ -1,0 +1,26 @@
+.hero{
+  background-image: url('/img/Mandalorian.png'); 
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.45); /* Aquí puedes ajustar el color oscuro y la opacidad */
+}
+.movie-info{
+  position: relative;
+  width: 50%;
+  z-index: 1;
+}
+.movie-buttons a:first-child{
+  background-color: var(--primary-color);
+}
+.movie-buttons a:nth-child(2){
+  background-color: var(--shade-color);
+}
