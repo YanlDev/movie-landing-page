@@ -33,3 +33,16 @@
 .movie-buttons a:nth-child(2):hover{
   background-color: var(--primary-background-color);
 }
+
+@media (max-width: 750px){
+  .hero{
+    background-position: left;
+  }
+  .movie-info{
+    width: 90%;
+    text-align: center;
+  }
+  .button{
+    width: 50%;
+  }
+}
